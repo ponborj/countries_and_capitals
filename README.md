@@ -82,7 +82,7 @@ vendor\bin\phpunit
 ## 📦 Estrutura relevante
 
 - 
-esources/views/ → templates Blade do jogo
+- resources/views/ → templates Blade do jogo
 - app/app_data.php → lista de países e capitais
 - app/Http/Controllers/MainController.php → lógica do jogo
 
