@@ -81,7 +81,6 @@ vendor\bin\phpunit
 
 ## 📦 Estrutura relevante
 
-- 
 - resources/views/ → templates Blade do jogo
 - app/app_data.php → lista de países e capitais
 - app/Http/Controllers/MainController.php → lógica do jogo
@@ -90,7 +89,7 @@ vendor\bin\phpunit
 
 ## ✅ Melhorias sugeridas
 
-- Melhora estilo
+- Melhorar o estilo
 - Adicionar persistência de pontuação por usuário (BD + autenticação)
 - Incluir modo de treino com explicações sobre cada capital
 - Adicionar suporte a múltiplas línguas
