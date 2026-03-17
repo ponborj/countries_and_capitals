@@ -19,13 +19,13 @@ O quiz funciona assim:
 
 ### Pré-requisitos
 
-- PHP 8.1+ (já vem com Laragon)
+- PHP 8.1+ (Laragon)
 - Composer
 - Node.js + npm (para assets)
 
 ### Instalação
 
-`ash
+`~
 cd c:\laragon\www\countries_and_capitals
 composer install
 npm install
@@ -35,19 +35,19 @@ npm install
 
 1. Copie o .env.example para .env:
 
-`ash
+`~
 copy .env.example .env
 `
 
 2. Gere a chave de aplicação:
 
-`ash
+`~
 php artisan key:generate
 `
 
 ### Rodar localmente
 
-`ash
+`~
 php artisan serve
 `
 
@@ -57,9 +57,10 @@ Acesse: http://127.0.0.1:8000
 
 ## 🧠 Como o quiz funciona (rápido)
 
-- Os dados de países e capitais estão em pp/app_data.php.
+- Os dados de países e capitais estão em app/app_data.php.
 - O controller principal é App\Http\Controllers\MainController.
-- As rotas principais estão em outes/web.php:
+- As rotas principais estão em 
+outes/web.php:
   - / (formulário de início)
   - /game (pergunta atual)
   - /answer/{answer} (resposta escolhida)
@@ -72,7 +73,7 @@ Acesse: http://127.0.0.1:8000
 
 Este projeto não inclui testes automatizados, mas você pode rodar a suíte padrão do Laravel:
 
-`ash
+`~
 vendor\bin\phpunit
 `
 
@@ -80,14 +81,16 @@ vendor\bin\phpunit
 
 ## 📦 Estrutura relevante
 
-- esources/views/ → templates Blade do jogo
-- pp/app_data.php → lista de países e capitais
-- pp/Http/Controllers/MainController.php → lógica do jogo
+- 
+esources/views/ → templates Blade do jogo
+- app/app_data.php → lista de países e capitais
+- app/Http/Controllers/MainController.php → lógica do jogo
 
 ---
 
 ## ✅ Melhorias sugeridas
 
+- Melhora estilo
 - Adicionar persistência de pontuação por usuário (BD + autenticação)
 - Incluir modo de treino com explicações sobre cada capital
 - Adicionar suporte a múltiplas línguas
